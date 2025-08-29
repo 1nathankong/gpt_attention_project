@@ -1,0 +1,34 @@
+import torch
+from transformers import AutoTokenizer, AutoModelForCausalLM
+import matplotlib.pyplot as plt
+import seaborn as sns
+
+def draw_attention(attn_probs, tokens):
+    plt.figure(figsize=(8, 6))
+    sns.heatmap(attn_probs.detach().cpu().numpy(), xticklabels=tokens, yticklabels=tokens, cmap='viridis')
+    plt.title('Attention Heatmap')
+    plt.xticks(rotation=45)
+    plt.tight_layout()
+    plt.show()
+
+def extract_attention():
+    model = AutoModelForCausalLM.from_pretrained('openai/gpt-oss-20b', torch_dtype=torch.float16, device_map='auto')
+    tokenizer = AutoTokenizer.from_pretrained('openai/gpt-oss-20b')
+
+    input_text = "The quick brown fox jumps over the lazy dog"
+    tokens = tokenizer(input_text, return_tensors='pt').to('cuda')
+    input_ids = tokens['input_ids']
+    token_strs = tokenizer.convert_ids_to_tokens(input_ids[0])
+
+    block = model.transformer.h[0]
+    hidden = model.transformer.wte(input_ids)
+    qkv = block.attn.qkv_proj(hidden)
+    q, k, v = qkv.chunk(3, dim=-1)
+
+    d_k = q.shape[-1]
+    scores = torch.matmul(q, k.transpose(-2, -1)) / d_k ** 0.5
+    probs = torch.nn.functional.softmax(scores, dim=-1)
+    draw_attention(probs[0], token_strs)
+
+if __name__ == '__main__':
+    extract_attention()

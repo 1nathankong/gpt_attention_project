@@ -1,0 +1,482 @@
+{
+  "math_backend": {
+    "basic_2048_1": {
+      "status": "SUCCESS",
+      "prefill_ms": 713.2785320281982,
+      "memory_gb": 57.56081971200001,
+      "tok_per_s": 15.540383973548998,
+      "details": "Prefill: 713.3ms, Memory: 57.6GB",
+      "section": "basic",
+      "sequence_length": 2048,
+      "batch_size": 1
+    },
+    "basic_4096_1": {
+      "status": "SUCCESS",
+      "prefill_ms": 1989.5732402801514,
+      "memory_gb": 96.087954432,
+      "tok_per_s": 10.197259784076632,
+      "details": "Prefill: 1989.6ms, Memory: 96.1GB",
+      "section": "basic",
+      "sequence_length": 4096,
+      "batch_size": 1
+    },
+    "basic_8192_1": {
+      "status": "SUCCESS",
+      "prefill_ms": 6921.36549949646,
+      "memory_gb": 253.44220672,
+      "tok_per_s": 4.7714927046047295,
+      "details": "Prefill: 6921.4ms, Memory: 253.4GB",
+      "section": "basic",
+      "sequence_length": 8192,
+      "batch_size": 1
+    },
+    "basic_16384_1": {
+      "status": "ERROR",
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "basic",
+      "sequence_length": 16384,
+      "batch_size": 1
+    },
+    "basic_32768_1": {
+      "status": "ERROR",
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "basic",
+      "sequence_length": 32768,
+      "batch_size": 1
+    },
+    "basic_65536_1": {
+      "status": "ERROR",
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "basic",
+      "sequence_length": 65536,
+      "batch_size": 1
+    },
+    "basic_131072_1": {
+      "status": "ERROR",
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "basic",
+      "sequence_length": 131072,
+      "batch_size": 1
+    },
+    "optimized_4096_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 4096,
+        "batch_size": 1,
+        "gen_tokens": 32
+      },
+      "prefill_ms": 1527.9040336608887,
+      "memory_gb": 515.9635271679999,
+      "tok_per_s": 9.175194562603716,
+      "details": "Prefill: 1527.9ms, Memory: 516.0GB, Throughput: 9.2tok/s",
+      "section": "optimized",
+      "sequence_length": 4096,
+      "batch_size": 1
+    },
+    "optimized_8192_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 8192,
+        "batch_size": 1,
+        "gen_tokens": 16
+      },
+      "prefill_ms": 4927.678346633911,
+      "memory_gb": 515.9635271679999,
+      "tok_per_s": 2.5716289535297134,
+      "details": "Prefill: 4927.7ms, Memory: 516.0GB, Throughput: 2.6tok/s",
+      "section": "optimized",
+      "sequence_length": 8192,
+      "batch_size": 1
+    },
+    "optimized_16384_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 16384,
+        "batch_size": 1,
+        "gen_tokens": 8
+      },
+      "prefill_ms": 17719.650268554688,
+      "memory_gb": 626.239423488,
+      "tok_per_s": 0.4301812808578243,
+      "details": "Prefill: 17719.7ms, Memory: 626.2GB, Throughput: 0.4tok/s",
+      "section": "optimized",
+      "sequence_length": 16384,
+      "batch_size": 1
+    },
+    "optimized_32768_1": {
+      "status": "ERROR",
+      "config": {
+        "prompt_len": 32768,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "optimized",
+      "sequence_length": 32768,
+      "batch_size": 1
+    },
+    "optimized_65536_1": {
+      "status": "ERROR",
+      "config": {
+        "prompt_len": 65536,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "optimized",
+      "sequence_length": 65536,
+      "batch_size": 1
+    },
+    "optimized_131072_1": {
+      "status": "ERROR",
+      "config": {
+        "prompt_len": 131072,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "optimized",
+      "sequence_length": 131072,
+      "batch_size": 1
+    },
+    "optimized_4096_2": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 4096,
+        "batch_size": 2,
+        "gen_tokens": 16
+      },
+      "prefill_ms": 2705.084800720215,
+      "memory_gb": 648.1214863359999,
+      "tok_per_s": 8.001882996205628,
+      "details": "Prefill: 2705.1ms, Memory: 648.1GB, Throughput: 8.0tok/s",
+      "section": "optimized",
+      "sequence_length": 4096,
+      "batch_size": 2
+    },
+    "optimized_8192_2": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 8192,
+        "batch_size": 2,
+        "gen_tokens": 8
+      },
+      "prefill_ms": 8152.569055557251,
+      "memory_gb": 648.1214863359999,
+      "tok_per_s": 1.7744894799100381,
+      "details": "Prefill: 8152.6ms, Memory: 648.1GB, Throughput: 1.8tok/s",
+      "section": "optimized",
+      "sequence_length": 8192,
+      "batch_size": 2
+    },
+    "optimized_16384_2": {
+      "status": "ERROR",
+      "config": {
+        "prompt_len": 16384,
+        "batch_size": 2,
+        "gen_tokens": 4
+      },
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "optimized",
+      "sequence_length": 16384,
+      "batch_size": 2
+    },
+    "ultra_65536_1": {
+      "status": "ERROR",
+      "config": {
+        "prompt_len": 65536,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "ultra_long",
+      "sequence_length": 65536,
+      "batch_size": 1
+    },
+    "ultra_131072_1": {
+      "status": "ERROR",
+      "config": {
+        "prompt_len": 131072,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "ultra_long",
+      "sequence_length": 131072,
+      "batch_size": 1
+    },
+    "ultra_262144_1": {
+      "status": "ERROR",
+      "config": {
+        "prompt_len": 262144,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "ultra_long",
+      "sequence_length": 262144,
+      "batch_size": 1
+    }
+  },
+  "flashattention": {
+    "basic_2048_1": {
+      "status": "SUCCESS",
+      "prefill_ms": 762.1586322784424,
+      "memory_gb": 48.060990464,
+      "tok_per_s": 19.86166139547707,
+      "details": "Prefill: 762.2ms, Memory: 48.1GB",
+      "section": "basic",
+      "sequence_length": 2048,
+      "batch_size": 1
+    },
+    "basic_4096_1": {
+      "status": "SUCCESS",
+      "prefill_ms": 736.5212440490723,
+      "memory_gb": 61.069499392,
+      "tok_per_s": 16.61236135648969,
+      "details": "Prefill: 736.5ms, Memory: 61.1GB",
+      "section": "basic",
+      "sequence_length": 4096,
+      "batch_size": 1
+    },
+    "basic_8192_1": {
+      "status": "SUCCESS",
+      "prefill_ms": 1596.9083309173584,
+      "memory_gb": 103.0982272,
+      "tok_per_s": 11.561216116501269,
+      "details": "Prefill: 1596.9ms, Memory: 103.1GB",
+      "section": "basic",
+      "sequence_length": 8192,
+      "batch_size": 1
+    },
+    "basic_16384_1": {
+      "status": "SUCCESS",
+      "prefill_ms": 3422.529697418213,
+      "memory_gb": 267.953944064,
+      "tok_per_s": 6.974090777811716,
+      "details": "Prefill: 3422.5ms, Memory: 268.0GB",
+      "section": "basic",
+      "sequence_length": 16384,
+      "batch_size": 1
+    },
+    "basic_32768_1": {
+      "status": "SUCCESS",
+      "prefill_ms": 7650.731563568115,
+      "memory_gb": 284.79653376,
+      "tok_per_s": 3.4555357889238634,
+      "details": "Prefill: 7650.7ms, Memory: 284.8GB",
+      "section": "basic",
+      "sequence_length": 32768,
+      "batch_size": 1
+    },
+    "basic_65536_1": {
+      "status": "SUCCESS",
+      "prefill_ms": 19273.6554145813,
+      "memory_gb": 290.85866496,
+      "tok_per_s": 1.2212681210612937,
+      "details": "Prefill: 19273.7ms, Memory: 290.9GB",
+      "section": "basic",
+      "sequence_length": 65536,
+      "batch_size": 1
+    },
+    "basic_131072_1": {
+      "status": "ERROR",
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error",
+      "section": "basic",
+      "sequence_length": 131072,
+      "batch_size": 1
+    },
+    "optimized_4096_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 4096,
+        "batch_size": 1,
+        "gen_tokens": 32
+      },
+      "prefill_ms": 737.044095993042,
+      "memory_gb": 515.9635271679999,
+      "tok_per_s": 14.772500846665075,
+      "details": "Prefill: 737.0ms, Memory: 516.0GB, Throughput: 14.8tok/s",
+      "section": "optimized",
+      "sequence_length": 4096,
+      "batch_size": 1
+    },
+    "optimized_8192_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 8192,
+        "batch_size": 1,
+        "gen_tokens": 16
+      },
+      "prefill_ms": 1329.270839691162,
+      "memory_gb": 515.9635271679999,
+      "tok_per_s": 7.501200089376563,
+      "details": "Prefill: 1329.3ms, Memory: 516.0GB, Throughput: 7.5tok/s",
+      "section": "optimized",
+      "sequence_length": 8192,
+      "batch_size": 1
+    },
+    "optimized_16384_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 16384,
+        "batch_size": 1,
+        "gen_tokens": 8
+      },
+      "prefill_ms": 2811.281442642212,
+      "memory_gb": 515.9635271679999,
+      "tok_per_s": 2.494236102268459,
+      "details": "Prefill: 2811.3ms, Memory: 516.0GB, Throughput: 2.5tok/s",
+      "section": "optimized",
+      "sequence_length": 16384,
+      "batch_size": 1
+    },
+    "optimized_32768_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 32768,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "prefill_ms": 6436.161518096924,
+      "memory_gb": 647.5790771199999,
+      "tok_per_s": 0.6255954397189112,
+      "details": "Prefill: 6436.2ms, Memory: 647.6GB, Throughput: 0.6tok/s",
+      "section": "optimized",
+      "sequence_length": 32768,
+      "batch_size": 1
+    },
+    "optimized_65536_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 65536,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "prefill_ms": 15265.612125396729,
+      "memory_gb": 647.5790771199999,
+      "tok_per_s": 0.2574237375693224,
+      "details": "Prefill: 15265.6ms, Memory: 647.6GB, Throughput: 0.3tok/s",
+      "section": "optimized",
+      "sequence_length": 65536,
+      "batch_size": 1
+    },
+    "optimized_131072_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 131072,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "prefill_ms": 42499.3622303009,
+      "memory_gb": 647.5790771199999,
+      "tok_per_s": 0.09190914849705305,
+      "details": "Prefill: 42499.4ms, Memory: 647.6GB, Throughput: 0.1tok/s",
+      "section": "optimized",
+      "sequence_length": 131072,
+      "batch_size": 1
+    },
+    "optimized_4096_2": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 4096,
+        "batch_size": 2,
+        "gen_tokens": 16
+      },
+      "prefill_ms": 1419.8927879333496,
+      "memory_gb": 648.1214863359999,
+      "tok_per_s": 15.286140854913139,
+      "details": "Prefill: 1419.9ms, Memory: 648.1GB, Throughput: 15.3tok/s",
+      "section": "optimized",
+      "sequence_length": 4096,
+      "batch_size": 2
+    },
+    "optimized_8192_2": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 8192,
+        "batch_size": 2,
+        "gen_tokens": 8
+      },
+      "prefill_ms": 2638.949155807495,
+      "memory_gb": 648.1214863359999,
+      "tok_per_s": 5.259271258462018,
+      "details": "Prefill: 2638.9ms, Memory: 648.1GB, Throughput: 5.3tok/s",
+      "section": "optimized",
+      "sequence_length": 8192,
+      "batch_size": 2
+    },
+    "optimized_16384_2": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 16384,
+        "batch_size": 2,
+        "gen_tokens": 4
+      },
+      "prefill_ms": 5622.326135635376,
+      "memory_gb": 648.1214863359999,
+      "tok_per_s": 1.4022905595223598,
+      "details": "Prefill: 5622.3ms, Memory: 648.1GB, Throughput: 1.4tok/s",
+      "section": "optimized",
+      "sequence_length": 16384,
+      "batch_size": 2
+    },
+    "ultra_65536_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 65536,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "prefill_ms": 15262.293577194214,
+      "memory_gb": 648.1214863359999,
+      "tok_per_s": 0.25733106077516343,
+      "available_gb_before": 594.7561039924622,
+      "details": "Prefill: 15262.3ms, Memory: 648.1GB, Throughput: 0.3tok/s",
+      "section": "ultra_long",
+      "sequence_length": 65536,
+      "batch_size": 1
+    },
+    "ultra_131072_1": {
+      "status": "SUCCESS",
+      "config": {
+        "prompt_len": 131072,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "prefill_ms": 42515.04969596863,
+      "memory_gb": 648.1214863359999,
+      "tok_per_s": 0.09195748502339235,
+      "available_gb_before": 594.7561039924622,
+      "details": "Prefill: 42515.0ms, Memory: 648.1GB, Throughput: 0.1tok/s",
+      "section": "ultra_long",
+      "sequence_length": 131072,
+      "batch_size": 1
+    },
+    "ultra_262144_1": {
+      "status": "ERROR",
+      "config": {
+        "prompt_len": 262144,
+        "batch_size": 1,
+        "gen_tokens": 4
+      },
+      "error": "OOM error - try reducing batch size or sequence length",
+      "details": "Runtime error at extreme length",
+      "section": "ultra_long",
+      "sequence_length": 262144,
+      "batch_size": 1
+    }
+  }
+}
